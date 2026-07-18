@@ -1,4 +1,4 @@
-import "./Testimonials.css";
+import "./testimonials.css";
 import { FaQuoteLeft, FaStar } from "react-icons/fa";
 
 // Reemplaza estos testimonios por los reales cuando los tengas.

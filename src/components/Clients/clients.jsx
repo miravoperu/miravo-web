@@ -1,4 +1,4 @@
-import "./Clients.css";
+import "./clients.css";
 
 // Reemplaza estos logos por los reales cuando los tengas.
 // Colócalos en /public/logos/ (ya tienes esa carpeta creada).

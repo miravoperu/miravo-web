@@ -1,4 +1,4 @@
-import "./Portfolio.css";
+import "./portfolio.css";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 // Reemplaza estas rutas por tus imágenes reales en /public/images/portfolio/
