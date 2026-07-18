@@ -144,18 +144,29 @@
 }
 
 .secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+
     background: transparent;
     color: white;
 
-    display: flex;
-    align-items: center;
-    gap: 12px;
-
     padding: 18px 10px;
     font-weight: 600;
+    transition: .35s;
+}
+
+.secondary svg {
+    font-size: .85rem;
+    transition: transform .35s, color .35s;
 }
 
 .secondary:hover {
+    color: #ff7a00;
+}
+
+.secondary:hover svg {
+    transform: translateX(4px);
     color: #ff7a00;
 }
 /* ===========================
