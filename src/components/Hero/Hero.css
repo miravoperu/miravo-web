@@ -1,0 +1,425 @@
+/* ===========================
+   HERO - LAYOUT
+=========================== */
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+
+    overflow: hidden;
+    isolation: isolate;
+}
+
+/* Wrapper interno: contiene y centra el contenido (texto + imagen) */
+.heroContent {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    gap: 100px;
+
+    padding: 90px 8% 50px;
+
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* ===========================
+   BLOBS
+=========================== */
+
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(170px);
+    opacity: .28;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.blob1 {
+    width: 520px;
+    height: 520px;
+    background: #ff7a00;
+    left: -180px;
+    top: -180px;
+}
+
+.blob2 {
+    width: 500px;
+    height: 500px;
+    background: #8B5CF6;
+    right: -180px;
+    bottom: -180px;
+}
+
+
+/* ===========================
+   IZQUIERDA
+=========================== */
+
+.heroLeft {
+    display: flex;
+    flex-direction: column;
+    max-width: 540px;
+    justify-self: end;
+}
+
+.heroTag {
+    display: inline-flex;
+    align-items: center;
+    width: max-content;
+
+    padding: 10px 18px;
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, .05);
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    color: #d7d7d7;
+    font-size: .85rem;
+    letter-spacing: .5px;
+
+    margin-bottom: 20px;
+}
+
+.heroLeft h1 {
+    font-family: var(--font-title);
+    font-size: clamp(2.8rem, 4.5vw, 4.2rem);
+    line-height: .95;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+}
+
+.heroLeft h1 span {
+    background: linear-gradient(135deg, #FF7A00, #8B5CF6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.heroLeft p {
+    color: #b7b7c7;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+/* ===========================
+   BOTONES
+=========================== */
+
+.heroButtons {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 45px;
+}
+
+.heroButtons button {
+    border: none;
+    cursor: pointer;
+    transition: .35s;
+    font-size: 1rem;
+}
+
+.primary {
+    padding: 18px 36px;
+    border-radius: 15px;
+
+    background: linear-gradient(135deg, #FF7A00, #8B5CF6);
+    color: white;
+    font-weight: 700;
+
+    box-shadow: 0 15px 40px rgba(255, 122, 0, .25);
+}
+
+.primary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 30px 60px rgba(255, 122, 0, .35);
+}
+
+.secondary {
+    background: transparent;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 18px 10px;
+    font-weight: 600;
+}
+
+.secondary:hover {
+    color: #ff7a00;
+}
+
+/* ===========================
+   NÚMEROS
+=========================== */
+
+.heroNumbers {
+    display: flex;
+    gap: 55px;
+}
+
+.heroNumbers h3 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.heroNumbers span {
+    color: #999;
+}
+
+/* ==========================================
+   HERO RIGHT
+========================================== */
+
+.heroRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    justify-self: start;
+}
+
+/* Glow detrás de la imagen */
+.heroRight::after {
+    content: "";
+    position: absolute;
+
+    width: 520px;
+    height: 520px;
+    border-radius: 50%;
+
+    background: radial-gradient(circle,
+        rgba(255, 122, 0, .28) 0%,
+        rgba(139, 92, 246, .22) 45%,
+        transparent 75%);
+
+    filter: blur(70px);
+    z-index: -1;
+}
+
+/* Contenedor */
+.imageContainer {
+    position: relative;
+    width: 100%;
+    max-width: 720px;
+
+    border-radius: 34px;
+    overflow: visible;
+    isolation: isolate;
+
+    transition: .45s;
+}
+
+.imageContainer img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 16 / 10;
+
+    border-radius: 34px;
+    border: 1px solid rgba(255, 255, 255, .08);
+    box-shadow: 0 40px 120px rgba(0, 0, 0, .60);
+
+    transition: .5s;
+    position: relative;
+    z-index: 1;
+}
+
+.imageContainer:hover {
+    transform:
+        perspective(1200px)
+        rotateY(-4deg)
+        rotateX(2deg)
+        translateY(-6px);
+}
+
+/* Degradado encima */
+.imageContainer::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 34px;
+
+    background:
+        linear-gradient(to top, rgba(9, 9, 11, .72), transparent 45%),
+        linear-gradient(to left, rgba(9, 9, 11, .35), transparent 35%);
+
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Difuminado de bordes */
+.imageContainer::before {
+    content: "";
+    position: absolute;
+    inset: -15px;
+    border-radius: 42px;
+
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255, 122, 0, .18), transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(139, 92, 246, .18), transparent 40%);
+
+    filter: blur(35px);
+    z-index: 0;
+}
+
+/* ==========================================
+   TARJETAS FLOTANTES
+========================================== */
+
+.floating {
+    position: absolute;
+    padding: 18px 22px;
+    border-radius: 18px;
+
+    background: rgba(20, 20, 26, .72);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    color: white;
+    font-weight: 600;
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .35);
+    animation: float 4s ease-in-out infinite;
+
+    z-index: 30;
+}
+
+.one {
+    top: 35px;
+    left: -35px;
+}
+
+.two {
+    bottom: 35px;
+    right: -35px;
+}
+
+/* ==========================================
+   ANIMACIÓN
+========================================== */
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* =============================
+   DASHBOARD
+============================= */
+
+.dashboardCard {
+    z-index: 20;
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 260px;
+
+    background: rgba(20, 20, 26, .85);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 22px;
+
+    overflow: hidden;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, .45);
+}
+
+.dashboardHeader {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, .06);
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.red {
+    background: #ff5f57;
+}
+
+.yellow {
+    background: #febc2e;
+}
+
+.green {
+    background: #28c840;
+}
+
+.dashboardHeader span {
+    margin-left: 10px;
+    font-size: .85rem;
+    color: #d7d7d7;
+}
+
+.dashboardBody {
+    padding: 20px;
+}
+
+.metric h4 {
+    font-size: 2rem;
+    margin-bottom: 4px;
+
+    background: linear-gradient(135deg, #FF7A00, #8B5CF6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.metric span {
+    color: #999;
+}
+
+.bars {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+
+    margin-top: 22px;
+    height: 90px;
+}
+
+.bar {
+    flex: 1;
+    border-radius: 10px 10px 0 0;
+    background: linear-gradient(180deg, #8B5CF6, #FF7A00);
+}
+
+.b1 {
+    height: 35%;
+}
+
+.b2 {
+    height: 60%;
+}
+
+.b3 {
+    height: 90%;
+}
+
+.b4 {
+    height: 70%;
+}

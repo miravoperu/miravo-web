@@ -1,0 +1,17 @@
+.fadeUp{
+
+opacity:0;
+
+transform:translateY(40px);
+
+transition:1s;
+
+}
+
+.fadeUp.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}

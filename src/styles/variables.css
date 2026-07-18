@@ -1,0 +1,49 @@
+:root{
+
+/* Colores */
+
+--background:#09090B;
+
+--surface:#14141A;
+
+--surface-light:#1C1C25;
+
+--primary:#FF7A00;
+
+--secondary:#8B5CF6;
+
+--text:#FFFFFF;
+
+--text-gray:#A0A0B2;
+
+--border:#262631;
+
+
+/* Tipografía */
+
+--font-title:"Sora",sans-serif;
+
+--font-body:"Inter",sans-serif;
+
+
+/* Sombras */
+
+--shadow:0 15px 40px rgba(0,0,0,.35);
+
+
+/* Radios */
+
+--radius:18px;
+
+
+/* Transiciones */
+
+--transition:.3s ease;
+
+
+--gradient-primary: linear-gradient(135deg, #FF7A00 0%, #8B5CF6 100%);
+
+--glass: rgba(255,255,255,.05);
+
+--glass-border: rgba(255,255,255,.08);
+}

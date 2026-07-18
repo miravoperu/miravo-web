@@ -1,0 +1,157 @@
+.about {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.about::before {
+    content: "";
+    position: absolute;
+
+    width: 460px;
+    height: 460px;
+    border-radius: 50%;
+
+    background: var(--secondary);
+    opacity: .18;
+    filter: blur(160px);
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: -1;
+    pointer-events: none;
+}
+
+.aboutLeft {
+    text-align: left;
+}
+
+.aboutTag {
+    display: inline-flex;
+    padding: 10px 18px;
+    border-radius: 999px;
+
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+
+    color: var(--text-gray);
+    font-size: .85rem;
+    letter-spacing: .5px;
+
+    margin-bottom: 24px;
+}
+
+.aboutLeft h2 {
+    font-family: var(--font-title);
+    font-size: clamp(2rem, 3.6vw, 2.8rem);
+    letter-spacing: -1px;
+    line-height: 1.15;
+    margin-bottom: 22px;
+}
+
+.aboutLeft > p {
+    color: var(--text-gray);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    max-width: 520px;
+}
+
+.aboutFeatures {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.aboutFeature {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+}
+
+.aboutFeature svg {
+    flex-shrink: 0;
+    margin-top: 4px;
+
+    width: 20px;
+    height: 20px;
+    color: var(--primary);
+}
+
+.aboutFeature h4 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.aboutFeature p {
+    color: var(--text-gray);
+    font-size: .92rem;
+    line-height: 1.6;
+}
+
+.aboutStats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.aboutStat {
+    padding: 36px 24px;
+    text-align: center;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+
+    transition: var(--transition);
+}
+
+.aboutStat:hover {
+    border-color: var(--secondary);
+    transform: translateY(-6px);
+}
+
+.aboutStat h3 {
+    font-family: var(--font-title);
+    font-size: 2.2rem;
+    margin-bottom: 6px;
+
+    background: var(--gradient-primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.aboutStat span {
+    color: var(--text-gray);
+    font-size: .9rem;
+}
+
+@media (max-width: 900px) {
+    .about {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .aboutLeft {
+        text-align: center;
+    }
+
+    .aboutLeft > p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .aboutFeature {
+        text-align: left;
+    }
+}

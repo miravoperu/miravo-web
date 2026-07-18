@@ -1,0 +1,135 @@
+.contact {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+.contactLeft {
+    text-align: left;
+}
+
+.contactTag {
+    display: inline-flex;
+    padding: 10px 18px;
+    border-radius: 999px;
+
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+
+    color: var(--text-gray);
+    font-size: .85rem;
+    letter-spacing: .5px;
+
+    margin-bottom: 24px;
+}
+
+.contactLeft h2 {
+    font-family: var(--font-title);
+    font-size: clamp(2rem, 3.6vw, 2.8rem);
+    letter-spacing: -1px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.contactLeft > p {
+    color: var(--text-gray);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    max-width: 460px;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: var(--text-gray);
+    font-size: .95rem;
+}
+
+.contactItem svg {
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    padding: 40px;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.formRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.contactForm input,
+.contactForm textarea {
+    width: 100%;
+    padding: 14px 16px;
+
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: .95rem;
+
+    transition: var(--transition);
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+    outline: none;
+    border-color: var(--secondary);
+}
+
+.contactForm textarea {
+    resize: vertical;
+}
+
+.contactSubmit {
+    align-self: flex-start;
+
+    padding: 16px 36px;
+    border: none;
+    border-radius: 14px;
+
+    background: var(--gradient-primary);
+    color: var(--text);
+    font-weight: 700;
+
+    box-shadow: 0 15px 35px rgba(255, 122, 0, .25);
+    transition: var(--transition);
+}
+
+.contactSubmit:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 25px 50px rgba(255, 122, 0, .35);
+}
+
+@media (max-width: 900px) {
+    .contact {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .formRow {
+        grid-template-columns: 1fr;
+    }
+}
