@@ -39,11 +39,9 @@ y diferenciarse de su competencia.
 
         <div className="heroButtons">
 
-          <button href="https://wa.me/985441731" className="primary">
-
-            Empezar proyecto
-
-          </button>
+          <a href="https://wa.me/51985441731" className="navbarButton" target="_blank" rel="noopener noreferrer">
+  Empezar proyecto
+</a>
 
          <a href="#portafolio" className="secondary no-underline transition-colors duration-300">
   Ver trabajos

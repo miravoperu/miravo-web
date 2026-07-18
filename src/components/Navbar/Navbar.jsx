@@ -16,9 +16,9 @@ function Navbar() {
         <a href="#contacto">Contacto</a>
       </nav>
 
-      <button href="https://wa.me/985441731" className="navbarButton">
-        Empecemos
-      </button>
+      <a href="https://wa.me/51985441731" className="navbarButton" target="_blank" rel="noopener noreferrer">
+  Empecemos
+</a>
 
     </header>
   );

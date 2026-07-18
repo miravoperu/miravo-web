@@ -86,11 +86,9 @@ function Services() {
               ))}
             </ul>
 
-            <button
-              href="https://wa.me/985441731" className={plan.featured ? "planBtnPrimary" : "planBtnSecondary"}
-            >
-              Elegir plan
-            </button>
+            <a href="https://wa.me/51985441731" className="navbarButton" target="_blank" rel="noopener noreferrer">
+  Elegir plan
+</a>
           </div>
         ))}
       </div>
