@@ -35,8 +35,8 @@ const plans = [
     period: "/mes",
     description: "Solución integral para marcas que buscan dominar su mercado.",
     features: [
-      "Estrategia multicanal y parrilla premium",
-      "Gestión total de todos tus canales digitales",
+      "Estrategia multicanal y parrilla mensual",
+      "Gestión de todos los canales digitales",
       "2 visitas mensuales para cobertura y contenido",
       "Producción de 16 contenidos al mes",
       "Host para Transmisiones en Vivo (3 veces x semana/2h)",
