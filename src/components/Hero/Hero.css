@@ -117,17 +117,16 @@
     margin-bottom: 45px;
 }
 
-.heroButtons button {
-    border: none;
+.heroButtons a{
+    text-decoration: none;
     cursor: pointer;
-    transition: .35s;
-    font-size: 1rem;
 }
 
 .primary {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
     padding: 18px 36px;
     border-radius: 15px;
 
@@ -136,6 +135,7 @@
     font-weight: 700;
 
     box-shadow: 0 15px 40px rgba(255, 122, 0, .25);
+    transition: .35s;
 }
 
 .primary:hover {
@@ -153,10 +153,19 @@
 
     padding: 18px 10px;
     font-weight: 600;
+    transition: .35s;
 }
 
 .secondary:hover {
     color: #ff7a00;
+}
+
+.secondary svg{
+    transition: .35s;
+}
+
+.secondary:hover svg{
+    transform: translateX(4px);
 }
 
 /* ===========================
