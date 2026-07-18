@@ -1,4 +1,4 @@
-import "./Contact.css";
+import "./contact.css";
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 
 function Contact() {
