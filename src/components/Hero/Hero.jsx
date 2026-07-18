@@ -43,7 +43,7 @@ y diferenciarse de su competencia.
   Empezar proyecto
 </a>
 
-         <a href="#portafolio">
+         <a href="#portafolio" className="secondary no-underline transition-colors duration-300">
   Ver trabajos
   <FaArrowRight />
 </a>
