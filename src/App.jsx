@@ -1,11 +1,11 @@
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
-import Clients from "./components/Clients/Clients";
+import clients from "./components/Clients/Clients";
 import Services from "./components/Planes/planes";
-import Portfolio from "./components/Portfolio/Portfolio";
-import About from "./components/About/About";
-import Testimonials from "./components/Testimonials/Testimonials";
-import Contact from "./components/Contact/Contact";
+import portfolio from "./components/Portfolio/Portfolio";
+import about from "./components/About/About";
+import testimonials from "./components/Testimonials/Testimonials";
+import contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 
 function App() {
