@@ -1,49 +1,49 @@
-.clients {
-    padding: 60px 8%;
-    text-align: center;
+    .clients {
+        padding: 60px 8%;
+        text-align: center;
 
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-}
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+    }
 
-.clientsTag {
-    display: inline-block;
+    .clientsTag {
+        display: inline-block;
 
-    color: var(--text-gray);
-    font-size: .85rem;
-    letter-spacing: .5px;
-    text-transform: uppercase;
+        color: var(--text-gray);
+        font-size: .85rem;
+        letter-spacing: .5px;
+        text-transform: uppercase;
 
-    margin-bottom: 40px;
-}
+        margin-bottom: 40px;
+    }
 
-.clientsGrid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-}
-
-.clientLogo img {
-    height: 80px;
-    width: auto;
-
-    filter: grayscale(1) brightness(1.8) opacity(.5);
-    transition: var(--transition);
-}
-
-.clientLogo:hover img {
-    filter: grayscale(0) brightness(1) opacity(1);
-    transform: scale(1.08);
-}
-
-@media (max-width: 700px) {
     .clientsGrid {
-        gap: 36px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
     }
 
     .clientLogo img {
-        height: 24px;
+        height: 80px;
+        width: auto;
+
+        filter: grayscale(1) brightness(1.8) opacity(.5);
+        transition: var(--transition);
+    }
+
+    .clientLogo:hover img {
+        filter: grayscale(0) brightness(1) opacity(1);
+        transform: scale(1.08);
+    }
+
+@media (max-width: 700px) {
+    .clientsGrid {
+        gap: 32px 40px;
+    }
+
+    .clientLogo img {
+        height: 44px;
     }
 }
