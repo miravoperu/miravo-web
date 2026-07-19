@@ -439,8 +439,8 @@
 
     .heroContent {
         grid-template-columns: 1fr;
-        gap: 36px;
-        padding: 100px 6% 40px;
+        gap: 20px;
+        padding: 80px 6% 40px;
     }
 
     .heroLeft {
