@@ -426,3 +426,69 @@
 .b4 {
     height: 70%;
 }
+
+/* ==========================================
+   RESPONSIVE - MOBILE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .hero {
+        min-height: auto;
+    }
+
+    .heroContent {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        padding: 110px 6% 60px;
+    }
+
+    .heroLeft {
+        max-width: 100%;
+        justify-self: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .heroTag {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .heroButtons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .heroNumbers {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .heroRight {
+        justify-self: center;
+        width: 100%;
+    }
+
+    .imageContainer {
+        max-width: 100%;
+    }
+
+    .dashboardCard {
+        position: static;
+        transform: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .floating {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .heroLeft h1 {
+        letter-spacing: -1px;
+    }
+}
