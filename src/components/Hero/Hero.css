@@ -451,8 +451,10 @@
     }
 
     .heroTag {
-        margin-left: auto;
-        margin-right: auto;
+        width: auto;
+        max-width: 100%;
+        white-space: normal;
+        text-align: center;
     }
 
     .heroButtons {
